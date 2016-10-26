@@ -1,0 +1,617 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Element SubGroup="False" SubGroupSeparator="" Name="Ward Review" xmlns:yaxlib="http://www.sinairv.com/yaxlib/" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.GroupElement">
+  <SubElements>
+    <Element SubGroup="False" SubGroupSeparator="" Name="People Present" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.GroupElement">
+      <SubElements>
+        <Element ListText="Dr. Naveed - Staff Grade Psychiatrist&#xA;Dr. Bosworth - FY1" Numbered="True" Name="Who is present at the ward review:" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.ListElement" />
+      </SubElements>
+    </Element>
+    <Element SubGroup="False" SubGroupSeparator="" Name="Staff Feedback" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.GroupElement">
+      <SubElements>
+        <Element Complex="True" Value="" Name="Enter any ward feedback for the patient" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.StringElement" />
+        <Element Complex="True" Value="" Name="Enter any feedback from care coordinators" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.StringElement" />
+        <Element Complex="True" Value="" Name="Enter any feedback from family members" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.StringElement" />
+        <Element ListText="" Numbered="False" Name="Enter any proposed medication changes" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.ListElement" />
+      </SubElements>
+    </Element>
+    <Element SubGroup="True" SubGroupSeparator=";" Name="Admission Type" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.GroupElement">
+      <SubElements>
+        <Element SelectedChoiceIndex="0" ExtraText="" Name="Admission type" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.ChoiceElement">
+          <Choices>
+            <Choice Name="Voluntary">
+              <ExportVariations>
+                <ExportVariation>Voluntary</ExportVariation>
+              </ExportVariations>
+            </Choice>
+            <Choice Name="Section 2">
+              <ExportVariations>
+                <ExportVariation>Detained under Section 2 of the Mental Health Act</ExportVariation>
+              </ExportVariations>
+            </Choice>
+            <Choice Name="Section 3">
+              <ExportVariations>
+                <ExportVariation>Detained under Section 3 of the Mental Health Act</ExportVariation>
+              </ExportVariations>
+            </Choice>
+          </Choices>
+        </Element>
+      </SubElements>
+    </Element>
+    <Element SubGroup="True" SubGroupSeparator=";" Name="Observation Level" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.GroupElement">
+      <SubElements>
+        <Element SelectedChoiceIndex="1" ExtraText="" Name="Current observation level" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.ChoiceElement">
+          <Choices>
+            <Choice Name="Level 1">
+              <ExportVariations>
+                <ExportVariation>Currently on Level 1 observations</ExportVariation>
+              </ExportVariations>
+            </Choice>
+            <Choice Name="Level 2(15)">
+              <ExportVariations>
+                <ExportVariation>Currently on Level 2 (15) observations</ExportVariation>
+              </ExportVariations>
+            </Choice>
+            <Choice Name="Level 2(10)">
+              <ExportVariations>
+                <ExportVariation>Currently on Level 2 (10) observations</ExportVariation>
+              </ExportVariations>
+            </Choice>
+            <Choice Name="Level 2(5)">
+              <ExportVariations>
+                <ExportVariation>Currently on Level 2 (5) observations</ExportVariation>
+              </ExportVariations>
+            </Choice>
+            <Choice Name="Level 3">
+              <ExportVariations>
+                <ExportVariation>Currently on Level 3 observations</ExportVariation>
+              </ExportVariations>
+            </Choice>
+          </Choices>
+        </Element>
+      </SubElements>
+    </Element>
+    <Element SubGroup="False" SubGroupSeparator=";" Name="Patient Interview" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.GroupElement">
+      <SubElements>
+        <Element Complex="True" Value="" Name="Enter details during the patient interview" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.StringElement" />
+        <Element Complex="True" Value="" Name="Enter any of the basic details (e.g. suicidal thoughts etc)" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.StringElement" />
+        <Element ListText="" Numbered="False" Name="Enter any changes to the patient's medications" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.ListElement" />
+      </SubElements>
+    </Element>
+    <Element SubGroup="False" SubGroupSeparator=";" Name="Mental State Examination" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.GroupElement">
+      <SubElements>
+        <Element SubGroup="True" SubGroupSeparator=";" Name="Appearance and Behaviour" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.GroupElement">
+          <SubElements>
+            <Element SelectedChoiceIndex="0" ExtraText="" Name="Dress" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.ChoiceElement">
+              <Choices>
+                <Choice Name="Casual Dress">
+                  <ExportVariations>
+                    <ExportVariation>dressed casually</ExportVariation>
+                    <ExportVariation>casually dressed</ExportVariation>
+                  </ExportVariations>
+                </Choice>
+                <Choice Name="Dressing Gown">
+                  <ExportVariations>
+                    <ExportVariation>dressed in a dressing gown</ExportVariation>
+                  </ExportVariations>
+                </Choice>
+                <Choice Name="Nightwear">
+                  <ExportVariations>
+                    <ExportVariation>dressed in nightwear</ExportVariation>
+                  </ExportVariations>
+                </Choice>
+                <Choice Name="Hospital Clothes">
+                  <ExportVariations>
+                    <ExportVariation>dressed in clothes provided by the hospital</ExportVariation>
+                  </ExportVariations>
+                </Choice>
+              </Choices>
+            </Element>
+            <Element SelectedChoiceIndex="0" ExtraText="" Name="Well-Kempt?" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.ChoiceElement">
+              <Choices>
+                <Choice Name="Yes">
+                  <ExportVariations>
+                    <ExportVariation>reasonably well-kempt</ExportVariation>
+                  </ExportVariations>
+                </Choice>
+                <Choice Name="No">
+                  <ExportVariations>
+                    <ExportVariation>$patient$ appears somewhat unkempt</ExportVariation>
+                  </ExportVariations>
+                </Choice>
+              </Choices>
+            </Element>
+            <Element SelectedChoiceIndex="0" ExtraText="" Name="Hygiene" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.ChoiceElement">
+              <Choices>
+                <Choice Name="Good">
+                  <ExportVariations>
+                    <ExportVariation>good hygiene</ExportVariation>
+                    <ExportVariation>reasonable hygiene</ExportVariation>
+                  </ExportVariations>
+                </Choice>
+                <Choice Name="Poor">
+                  <ExportVariations>
+                    <ExportVariation>poor hygiene</ExportVariation>
+                  </ExportVariations>
+                </Choice>
+              </Choices>
+            </Element>
+            <Element SelectedChoiceIndex="0" ExtraText="" Name="Rapport" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.ChoiceElement">
+              <Choices>
+                <Choice Name="Good">
+                  <ExportVariations>
+                    <ExportVariation>able to establish good rapport with $patient$</ExportVariation>
+                  </ExportVariations>
+                </Choice>
+                <Choice Name="Difficult to establish">
+                  <ExportVariations>
+                    <ExportVariation>was difficult to establish rapport with the patient</ExportVariation>
+                    <ExportVariation>was difficult to establish rapport with $patient$</ExportVariation>
+                  </ExportVariations>
+                </Choice>
+              </Choices>
+            </Element>
+            <Element SelectedChoiceIndex="0" ExtraText="" Name="Behavioural Approach" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.ChoiceElement">
+              <Choices>
+                <Choice Name="Calm">
+                  <ExportVariations>
+                    <ExportVariation>calm</ExportVariation>
+                    <ExportVariation>remained calm throughout the discussion</ExportVariation>
+                    <ExportVariation>maintained a calm manner during the discussion</ExportVariation>
+                  </ExportVariations>
+                </Choice>
+                <Choice Name="Anxious">
+                  <ExportVariations>
+                    <ExportVariation>appeared anxious during the discussion</ExportVariation>
+                    <ExportVariation>appeared anxious</ExportVariation>
+                  </ExportVariations>
+                </Choice>
+                <Choice Name="Confrontational">
+                  <ExportVariations>
+                    <ExportVariation>$patient$ was quite confrontational during the discussion</ExportVariation>
+                  </ExportVariations>
+                </Choice>
+                <Choice Name="Agitated">
+                  <ExportVariations>
+                    <ExportVariation>appeared agitated</ExportVariation>
+                  </ExportVariations>
+                </Choice>
+                <Choice Name="Lethargic">
+                  <ExportVariations>
+                    <ExportVariation>$patient$ appeared somewhat lethargic</ExportVariation>
+                  </ExportVariations>
+                </Choice>
+              </Choices>
+            </Element>
+            <Element SelectedChoiceIndex="0" ExtraText="" Name="Eye Contact" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.ChoiceElement">
+              <Choices>
+                <Choice Name="Good">
+                  <ExportVariations>
+                    <ExportVariation>making appropriate eye-contact</ExportVariation>
+                    <ExportVariation>making good eye-contact</ExportVariation>
+                  </ExportVariations>
+                </Choice>
+                <Choice Name="Intermittent">
+                  <ExportVariations>
+                    <ExportVariation>making intermittent eye contact</ExportVariation>
+                    <ExportVariation>made eye contact only intermittently</ExportVariation>
+                  </ExportVariations>
+                </Choice>
+                <Choice Name="Intermittent - questions">
+                  <ExportVariations>
+                    <ExportVariation>making intermittent eye contact, only in response to questions, otherwise looking down</ExportVariation>
+                    <ExportVariation>making eye contact in response to questions, but otherwise looking away</ExportVariation>
+                  </ExportVariations>
+                </Choice>
+                <Choice Name="Avoiding">
+                  <ExportVariations>
+                    <ExportVariation>avoiding eye contact</ExportVariation>
+                    <ExportVariation>avoided eye contact throughout the discussion</ExportVariation>
+                  </ExportVariations>
+                </Choice>
+              </Choices>
+            </Element>
+            <Element SelectedChoiceIndex="0" ExtraText="" Name="Concentration" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.ChoiceElement">
+              <Choices>
+                <Choice Name="Alert">
+                  <ExportVariations>
+                    <ExportVariation>$patient$ is able to concentrate fully on the discussion</ExportVariation>
+                    <ExportVariation>$patient$ is alert, and concentrating on the discussion</ExportVariation>
+                  </ExportVariations>
+                </Choice>
+                <Choice Name="Distracted - Somewhat">
+                  <ExportVariations>
+                    <ExportVariation>$patient$ appeared somewhat distracted throughout the discussion</ExportVariation>
+                  </ExportVariations>
+                </Choice>
+                <Choice Name="Distracted - Completely">
+                  <ExportVariations>
+                    <ExportVariation>$patient$ appeared unable to focus on the discussion</ExportVariation>
+                  </ExportVariations>
+                </Choice>
+              </Choices>
+            </Element>
+          </SubElements>
+        </Element>
+        <Element SubGroup="True" SubGroupSeparator=";" Name="Speech" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.GroupElement">
+          <SubElements>
+            <Element SubGroup="True" SubGroupSeparator="," Name="" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.GroupElement">
+              <SubElements>
+                <Element SelectedChoiceIndex="0" ExtraText="" Name="Rate" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.ChoiceElement">
+                  <Choices>
+                    <Choice Name="Normal">
+                      <ExportVariations>
+                        <ExportVariation>normal rate</ExportVariation>
+                      </ExportVariations>
+                    </Choice>
+                    <Choice Name="Slow">
+                      <ExportVariations>
+                        <ExportVariation>slow rate</ExportVariation>
+                      </ExportVariations>
+                    </Choice>
+                    <Choice Name="Fast">
+                      <ExportVariations>
+                        <ExportVariation>speaking quickly</ExportVariation>
+                      </ExportVariations>
+                    </Choice>
+                  </Choices>
+                </Element>
+                <Element SelectedChoiceIndex="0" ExtraText="" Name="Rhythm" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.ChoiceElement">
+                  <Choices>
+                    <Choice Name="Normal">
+                      <ExportVariations>
+                        <ExportVariation>normal rhythm</ExportVariation>
+                      </ExportVariations>
+                    </Choice>
+                    <Choice Name="Slurred">
+                      <ExportVariations>
+                        <ExportVariation>slurred slightly</ExportVariation>
+                      </ExportVariations>
+                    </Choice>
+                  </Choices>
+                </Element>
+                <Element SelectedChoiceIndex="0" ExtraText="" Name="Tone" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.ChoiceElement">
+                  <Choices>
+                    <Choice Name="Normal">
+                      <ExportVariations>
+                        <ExportVariation>normal tone</ExportVariation>
+                      </ExportVariations>
+                    </Choice>
+                    <Choice Name="Soft">
+                      <ExportVariations>
+                        <ExportVariation>softly spoken</ExportVariation>
+                        <ExportVariation>speaking softly</ExportVariation>
+                        <ExportVariation>speaking quietly</ExportVariation>
+                      </ExportVariations>
+                    </Choice>
+                    <Choice Name="Loud">
+                      <ExportVariations>
+                        <ExportVariation>loudly spoken</ExportVariation>
+                        <ExportVariation>speaking loudly</ExportVariation>
+                      </ExportVariations>
+                    </Choice>
+                  </Choices>
+                </Element>
+              </SubElements>
+            </Element>
+            <Element SelectedChoiceIndex="0" ExtraText="" Name="Appropriateness of replies" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.ChoiceElement">
+              <Choices>
+                <Choice Name="Appropriate">
+                  <ExportVariations>
+                    <ExportVariation>replying appropriately to questions</ExportVariation>
+                    <ExportVariation>replies to questions were appropriate</ExportVariation>
+                  </ExportVariations>
+                </Choice>
+                <Choice Name="Inappropriate - Often">
+                  <ExportVariations>
+                    <ExportVariation>not replying appropriately to questions</ExportVariation>
+                    <ExportVariation>replies to questions often inappropriate</ExportVariation>
+                  </ExportVariations>
+                </Choice>
+                <Choice Name="Inappropriate - Occasionally">
+                  <ExportVariations>
+                    <ExportVariation>occasionally replies are inappropriate</ExportVariation>
+                  </ExportVariations>
+                </Choice>
+              </Choices>
+            </Element>
+          </SubElements>
+        </Element>
+        <Element SubGroup="True" SubGroupSeparator=";" Name="Mood" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.GroupElement">
+          <SubElements>
+            <Element Complex="False" Value="" Name="Subjective Mood" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.StringElement" />
+            <Element SelectedChoiceIndex="0" ExtraText="" Name="Objectively" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.ChoiceElement">
+              <Choices>
+                <Choice Name="Euthymic">
+                  <ExportVariations>
+                    <ExportVariation>objectively euthymic</ExportVariation>
+                  </ExportVariations>
+                </Choice>
+                <Choice Name="Low">
+                  <ExportVariations>
+                    <ExportVariation>objectively low</ExportVariation>
+                  </ExportVariations>
+                </Choice>
+                <Choice Name="Manic">
+                  <ExportVariations>
+                    <ExportVariation>objectively manic</ExportVariation>
+                  </ExportVariations>
+                </Choice>
+              </Choices>
+            </Element>
+          </SubElements>
+        </Element>
+        <Element SubGroup="True" SubGroupSeparator=";" Name="Thoughts" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.GroupElement">
+          <SubElements>
+            <Element Value="True" ExtraText="" Name="No FTD" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.BooleanElement">
+              <ExportVariations>
+                <ExportVariation>no evidence of formal thought disorder</ExportVariation>
+              </ExportVariations>
+            </Element>
+            <Element Value="False" ExtraText="" Name="Poverty of Speech" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.BooleanElement">
+              <ExportVariations>
+                <ExportVariation>poverty of speech</ExportVariation>
+              </ExportVariations>
+            </Element>
+            <Element Value="False" ExtraText="" Name="Thought Blocking" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.BooleanElement">
+              <ExportVariations>
+                <ExportVariation>evidence of thought blocking</ExportVariation>
+              </ExportVariations>
+            </Element>
+            <Element Value="False" ExtraText="" Name="Circumscribed Thinking" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.BooleanElement">
+              <ExportVariations>
+                <ExportVariation>evidence of circumscribed thinking</ExportVariation>
+              </ExportVariations>
+            </Element>
+            <Element Value="False" ExtraText="" Name="Derailment" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.BooleanElement">
+              <ExportVariations>
+                <ExportVariation>evidence of thought derailment</ExportVariation>
+              </ExportVariations>
+            </Element>
+            <Element Value="False" ExtraText="" Name="Flight of Ideas" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.BooleanElement">
+              <ExportVariations>
+                <ExportVariation>evidence of flight of ideas</ExportVariation>
+              </ExportVariations>
+            </Element>
+            <Element Value="False" ExtraText="" Name="Neologisms" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.BooleanElement">
+              <ExportVariations>
+                <ExportVariation>$patient$'s speech contains neologisms</ExportVariation>
+              </ExportVariations>
+            </Element>
+            <Element Value="False" ExtraText="" Name="Pressure of Speech" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.BooleanElement">
+              <ExportVariations>
+                <ExportVariation>evidence of pressure of speech</ExportVariation>
+              </ExportVariations>
+            </Element>
+            <Element Value="False" ExtraText="" Name="Tangentiality" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.BooleanElement">
+              <ExportVariations>
+                <ExportVariation>evidence of tangentiality</ExportVariation>
+              </ExportVariations>
+            </Element>
+            <Element SelectedChoiceIndex="0" ExtraText="" Name="Delusions" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.ChoiceElement">
+              <Choices>
+                <Choice Name="No">
+                  <ExportVariations>
+                    <ExportVariation>not experiencing paranoid delusions</ExportVariation>
+                  </ExportVariations>
+                </Choice>
+                <Choice Name="Yes">
+                  <ExportVariations>
+                    <ExportVariation>evidence of delusions</ExportVariation>
+                  </ExportVariations>
+                </Choice>
+              </Choices>
+            </Element>
+            <Element Complex="False" Value="" Name="Other Formal Features" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.StringElement" />
+            <Element SelectedChoiceIndex="0" ExtraText="" Name="Self-Harm/Suicide" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.ChoiceElement">
+              <Choices>
+                <Choice Name="None">
+                  <ExportVariations>
+                    <ExportVariation>$patient$ reports no thoughts of either self-harm or suicide</ExportVariation>
+                  </ExportVariations>
+                </Choice>
+                <Choice Name="Self-Harm Only">
+                  <ExportVariations>
+                    <ExportVariation>$patient$ reports she has thought about self-harming but has not had ideas about suicide</ExportVariation>
+                  </ExportVariations>
+                </Choice>
+                <Choice Name="Suicide - No Plans">
+                  <ExportVariations>
+                    <ExportVariation>$patient$ reports having thought about suicide, but currently has not created any plans for this</ExportVariation>
+                  </ExportVariations>
+                </Choice>
+                <Choice Name="Suicide - Inexact Plans">
+                  <ExportVariations>
+                    <ExportVariation>$patient$ reports having thought about suicide, and has had some plans about this but these are not well thought out</ExportVariation>
+                  </ExportVariations>
+                </Choice>
+                <Choice Name="Suicide - Concerning Plans">
+                  <ExportVariations>
+                    <ExportVariation>$patient$ reports having thought about suicide, and has created some thought-out plans about this</ExportVariation>
+                  </ExportVariations>
+                </Choice>
+              </Choices>
+            </Element>
+          </SubElements>
+        </Element>
+        <Element SubGroup="True" SubGroupSeparator=";" Name="Perceptions" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.GroupElement">
+          <SubElements>
+            <Element SelectedChoiceIndex="0" ExtraText="" Name="Hallucinations" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.ChoiceElement">
+              <Choices>
+                <Choice Name="None">
+                  <ExportVariations>
+                    <ExportVariation>no external evidence of hallucinations</ExportVariation>
+                  </ExportVariations>
+                </Choice>
+                <Choice Name="Visual">
+                  <ExportVariations>
+                    <ExportVariation>experiencing visual hallucinations</ExportVariation>
+                  </ExportVariations>
+                </Choice>
+                <Choice Name="Auditory">
+                  <ExportVariations>
+                    <ExportVariation>experiencing auditory hallucinations</ExportVariation>
+                  </ExportVariations>
+                </Choice>
+                <Choice Name="Visual + Auditory">
+                  <ExportVariations>
+                    <ExportVariation>experiencing visual and auditory hallucinations</ExportVariation>
+                  </ExportVariations>
+                </Choice>
+                <Choice Name="Denied but Evidence - Visual">
+                  <ExportVariations>
+                    <ExportVariation>denied experiencing hallucinations but evidence of visual hallucations upon testing</ExportVariation>
+                  </ExportVariations>
+                </Choice>
+                <Choice Name="Denied but Evidence - Auditory">
+                  <ExportVariations>
+                    <ExportVariation>denied experiencing hallucinations but evidence of auditory hallucations upon testing</ExportVariation>
+                  </ExportVariations>
+                </Choice>
+                <Choice Name="Denied but Evidence - Visual + Auditory">
+                  <ExportVariations>
+                    <ExportVariation>denied experiencing hallucinations but evidence of visual and auditory hallucations upon testing</ExportVariation>
+                  </ExportVariations>
+                </Choice>
+              </Choices>
+            </Element>
+          </SubElements>
+        </Element>
+        <Element SubGroup="True" SubGroupSeparator=";" Name="Cognition" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.GroupElement">
+          <SubElements>
+            <Element Value="True" ExtraText="" Name="Cognitively Intact" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.BooleanElement">
+              <ExportVariations>
+                <ExportVariation>cognition grossly intact</ExportVariation>
+              </ExportVariations>
+            </Element>
+          </SubElements>
+        </Element>
+        <Element SubGroup="True" SubGroupSeparator=";" Name="Insight" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.GroupElement">
+          <SubElements>
+            <Element SelectedChoiceIndex="0" ExtraText="" Name="Insight into condition" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.ChoiceElement">
+              <Choices>
+                <Choice Name="Good">
+                  <ExportVariations>
+                    <ExportVariation>$patient$ has good insight into $gender$ condition</ExportVariation>
+                  </ExportVariations>
+                </Choice>
+                <Choice Name="Fair">
+                  <ExportVariations>
+                    <ExportVariation>$patient$ has fair insight into $gender$ condition</ExportVariation>
+                  </ExportVariations>
+                </Choice>
+                <Choice Name="Poor">
+                  <ExportVariations>
+                    <ExportVariation>$patient$ has some, but generally poor insight into $gender$ condition</ExportVariation>
+                  </ExportVariations>
+                </Choice>
+                <Choice Name="None">
+                  <ExportVariations>
+                    <ExportVariation>$patient$ has no insight into $gender$ condition</ExportVariation>
+                  </ExportVariations>
+                </Choice>
+              </Choices>
+            </Element>
+          </SubElements>
+        </Element>
+        <Element SubGroup="True" SubGroupSeparator=";" Name="Capacity" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.GroupElement">
+          <SubElements>
+            <Element SelectedChoiceIndex="0" ExtraText="" Name="Decisions about medication" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.ChoiceElement">
+              <Choices>
+                <Choice Name="Yes">
+                  <ExportVariations>
+                    <ExportVariation>$patient$ has capacity to make decisions about $gender$ treatment</ExportVariation>
+                  </ExportVariations>
+                </Choice>
+                <Choice Name="No">
+                  <ExportVariations>
+                    <ExportVariation>$patient$ lacks capacity to make decisions about $gender$ treatment</ExportVariation>
+                  </ExportVariations>
+                </Choice>
+              </Choices>
+            </Element>
+            <Element SelectedChoiceIndex="0" ExtraText="" Name="Consenting to treatment" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.ChoiceElement">
+              <Choices>
+                <Choice Name="Yes">
+                  <ExportVariations>
+                    <ExportVariation>currently consenting to treatment</ExportVariation>
+                  </ExportVariations>
+                </Choice>
+                <Choice Name="No">
+                  <ExportVariations>
+                    <ExportVariation>currently not consenting to treatment</ExportVariation>
+                  </ExportVariations>
+                </Choice>
+              </Choices>
+            </Element>
+            <Element Complex="False" Value="" Name="Other Capacity Information" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.StringElement" />
+          </SubElements>
+        </Element>
+        <Element SubGroup="True" SubGroupSeparator=";" Name="Risks" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.GroupElement">
+          <SubElements>
+            <Element Value="True" ExtraText="" Name="Generally Low Risk" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.BooleanElement">
+              <ExportVariations>
+                <ExportVariation>risks of self-harm, suicide, harm to others, self-neglect, absconding are all low</ExportVariation>
+              </ExportVariations>
+            </Element>
+            <Element Value="False" ExtraText="" Name="Self-harm" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.BooleanElement">
+              <ExportVariations>
+                <ExportVariation>risk of self-harm</ExportVariation>
+              </ExportVariations>
+            </Element>
+            <Element Value="False" ExtraText="" Name="Harm to others" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.BooleanElement">
+              <ExportVariations>
+                <ExportVariation>risk of harming others</ExportVariation>
+              </ExportVariations>
+            </Element>
+            <Element Value="False" ExtraText="" Name="Suicide" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.BooleanElement">
+              <ExportVariations>
+                <ExportVariation>$patient$ may be at risk of attempting suicide</ExportVariation>
+              </ExportVariations>
+            </Element>
+            <Element Value="False" ExtraText="" Name="Self-Neglect" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.BooleanElement">
+              <ExportVariations>
+                <ExportVariation>risk of self-neglect</ExportVariation>
+              </ExportVariations>
+            </Element>
+            <Element Value="False" ExtraText="" Name="Abuse from others" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.BooleanElement">
+              <ExportVariations>
+                <ExportVariation>risk of abuse from others</ExportVariation>
+              </ExportVariations>
+            </Element>
+            <Element Value="False" ExtraText="" Name="Absconding" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.BooleanElement">
+              <ExportVariations>
+                <ExportVariation>risk of absconding</ExportVariation>
+              </ExportVariations>
+            </Element>
+            <Element Value="False" ExtraText="" Name="Alcohol" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.BooleanElement">
+              <ExportVariations>
+                <ExportVariation>risk of consuming alcohol</ExportVariation>
+              </ExportVariations>
+            </Element>
+            <Element Value="False" ExtraText="" Name="Drugs" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.BooleanElement">
+              <ExportVariations>
+                <ExportVariation>risk of taking drugs</ExportVariation>
+              </ExportVariations>
+            </Element>
+            <Element Value="False" ExtraText="" Name="Physical Health" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.BooleanElement">
+              <ExportVariations>
+                <ExportVariation>risks relating to physical health</ExportVariation>
+              </ExportVariations>
+            </Element>
+          </SubElements>
+        </Element>
+      </SubElements>
+    </Element>
+    <Element SubGroup="False" SubGroupSeparator=";" Name="Impression" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.GroupElement">
+      <SubElements>
+        <Element ListText="" Numbered="False" Name="Please enter your impression of the patient" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.ListElement" />
+      </SubElements>
+    </Element>
+    <Element SubGroup="False" SubGroupSeparator=";" Name="Plan" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.GroupElement">
+      <SubElements>
+        <Element ListText="" Numbered="True" Name="Enter the current plan for this patient (each line is a new list item)" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.ListElement" />
+        <Element Value="0" HighValue="11" LowValue="4" NormalValueText="Normal White Cell Count" AboveHighValueText="High white cell count" BelowLowValueText="Low white cell count" Units="mmol/L" Name="White Cell Count" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.LabResultElement" />
+      </SubElements>
+    </Element>
+  </SubElements>
+</Element>

@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextExpansionLibrary>
+  <TextExpansion ContractedText="lte">
+    <ExportVariations>
+      <ExportVariation>Utilising escorted leave off the ward</ExportVariation>
+      <ExportVariation>Taking escorted leave off the ward</ExportVariation>
+    </ExportVariations>
+  </TextExpansion>
+  <TextExpansion ContractedText="ltu">
+    <ExportVariations>
+      <ExportVariation>Utilising unescorted leave off the ward</ExportVariation>
+      <ExportVariation>Taking unescorted leave off the ward</ExportVariation>
+    </ExportVariations>
+  </TextExpansion>
+  <TextExpansion ContractedText="ln">
+    <ExportVariations>
+      <ExportVariation>Not taking leave</ExportVariation>
+      <ExportVariation>Not using leave</ExportVariation>
+    </ExportVariations>
+  </TextExpansion>
+  <TextExpansion ContractedText="nsh">
+    <ExportVariations>
+      <ExportVariation>Denies thoughts of self-harm</ExportVariation>
+    </ExportVariations>
+  </TextExpansion>
+  <TextExpansion ContractedText="nho">
+    <ExportVariations>
+      <ExportVariation>Denies thoughts of harming others</ExportVariation>
+    </ExportVariations>
+  </TextExpansion>
+  <TextExpansion ContractedText="sow">
+    <ExportVariations>
+      <ExportVariation>Reports feeling safe on the ward</ExportVariation>
+    </ExportVariations>
+  </TextExpansion>
+  <TextExpansion ContractedText="npt">
+    <ExportVariations>
+      <ExportVariation>Denies any paranoid thoughts</ExportVariation>
+    </ExportVariations>
+  </TextExpansion>
+  <TextExpansion ContractedText="tm">
+    <ExportVariations>
+      <ExportVariation>Reports that $g2$ is taking $g$ medication</ExportVariation>
+    </ExportVariations>
+  </TextExpansion>
+  <TextExpansion ContractedText="ew">
+    <ExportVariations>
+      <ExportVariation>Reports eating well</ExportVariation>
+    </ExportVariations>
+  </TextExpansion>
+  <TextExpansion ContractedText="eb">
+    <ExportVariations>
+      <ExportVariation>Reports not eating</ExportVariation>
+      <ExportVariation>Reports eating poorly</ExportVariation>
+    </ExportVariations>
+  </TextExpansion>
+  <TextExpansion ContractedText="dw">
+    <ExportVariations>
+      <ExportVariation>Reports drinking well</ExportVariation>
+      <ExportVariation>Reports drinking okay</ExportVariation>
+      <ExportVariation>Reports drinking a good amount of fluids</ExportVariation>
+    </ExportVariations>
+  </TextExpansion>
+  <TextExpansion ContractedText="db">
+    <ExportVariations>
+      <ExportVariation>Reports not drinking fluids</ExportVariation>
+    </ExportVariations>
+  </TextExpansion>
+  <TextExpansion ContractedText="crb">
+    <ExportVariations>
+      <ExportVariation>Asked $patient$ to attend clinical room for bloodtaking but they refused.</ExportVariation>
+    </ExportVariations>
+  </TextExpansion>
+  <TextExpansion ContractedText="rpe">
+    <ExportVariations>
+      <ExportVariation>Asked to complete a physical examination, but $patient$ refused this</ExportVariation>
+    </ExportVariations>
+  </TextExpansion>
+</TextExpansionLibrary>

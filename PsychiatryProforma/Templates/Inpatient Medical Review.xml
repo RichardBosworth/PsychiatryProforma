@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Element SubGroup="False" SubGroupSeparator="" Name="Ward Medical Review" xmlns:yaxlib="http://www.sinairv.com/yaxlib/" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.GroupElement">
+  <SubElements>
+    <Element SubGroup="False" SubGroupSeparator=";" Name="Background" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.GroupElement">
+      <SubElements>
+        <Element Complex="True" Value="Asked to review $patient$, as " Name="Enter why you were asked to see the patient" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.StringElement" />
+      </SubElements>
+    </Element>
+    <Element SubGroup="False" SubGroupSeparator=";" Name="Patient interview:" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.GroupElement">
+      <SubElements>
+        <Element Complex="True" Value="" Name="Enter the history taken whilst interviewing the patient" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.StringElement" />
+      </SubElements>
+    </Element>
+    <Element SubGroup="False" SubGroupSeparator=";" Name="Examination findings:" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.GroupElement">
+      <SubElements>
+        <Element Value="True" ExtraText="" Name="Normal examination" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.BooleanElement">
+          <ExportVariations>
+            <ExportVariation>Upon examining the patient, there were no signs of disease.</ExportVariation>
+            <ExportVariation>Examination of the patient was unremarkable.</ExportVariation>
+          </ExportVariations>
+        </Element>
+        <Element Complex="True" Value="" Name="Enter any relevant examination findings" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.StringElement" />
+        <Element SubGroup="False" SubGroupSeparator=";" Name="Observations" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.GroupElement">
+          <SubElements>
+            <Element Mask="009/009" Prompt="Enter the patient's blood pressure..." ExtraText="" Name="Blood Pressure" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.MaskedElement" />
+            <Element Mask="009 bpm" Prompt="Enter the patient's heard rate" ExtraText="regular" Name="Heart Rate" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.MaskedElement" />
+            <Element Mask="09 breaths per minute" Prompt="Enter the patient's respiratory rate" ExtraText="" Name="Respiratory Rate" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.MaskedElement" />
+            <Element Mask="009%" Prompt="Enter the patient's oxygen saturations" ExtraText="" Name="SpO2" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.MaskedElement" />
+            <Element Mask="00.99°c" Prompt="Enter the patient's temperature" ExtraText="" Name="Temperature" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.MaskedElement" />
+          </SubElements>
+        </Element>
+      </SubElements>
+    </Element>
+    <Element SubGroup="False" SubGroupSeparator=";" Name="Plan" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.GroupElement">
+      <SubElements>
+        <Element ListText="" Numbered="True" Name="Enter any relevant plans for the patient" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.ListElement" />
+      </SubElements>
+    </Element>
+    <Element SubGroup="False" SubGroupSeparator=";" Name="Medication changes" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.GroupElement">
+      <SubElements>
+        <Element Value="True" ExtraText="" Name="No medication changes made" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.BooleanElement">
+          <ExportVariations>
+            <ExportVariation>No changes to medication have been made at this time</ExportVariation>
+            <ExportVariation>No changes to $patient$'s medication have been made at this time.</ExportVariation>
+            <ExportVariation>Changes to medication were not required.</ExportVariation>
+          </ExportVariations>
+        </Element>
+        <Element ListText="" Numbered="False" Name="List any relevant medication changes" yaxlib:realtype="PsychiatryProforma.InterfaceBuilding.Model.ListElement" />
+      </SubElements>
+    </Element>
+  </SubElements>
+</Element>

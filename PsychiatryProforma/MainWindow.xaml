@@ -1,0 +1,34 @@
+﻿<Window xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="PsychiatryProforma.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PsychiatryProforma"
+        mc:Ignorable="d"
+        Title="Psychiatry Proforma" Width="800" Height="600">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="23*" />
+            <RowDefinition Height="296*" />
+        </Grid.RowDefinitions>
+        <ScrollViewer Grid.Row="1">
+            <StackPanel Grid.Row="1" CanVerticallyScroll="True" Margin="30">
+                <StackPanel Background="GhostWhite">
+                    <StackPanel Margin="10">
+                        <syncfusion:LabelTextBlock Text="Patient Details" Margin="0,0,0,10"></syncfusion:LabelTextBlock>
+                        <syncfusion:MaskedTextBox x:Name="PatientName" Culture="en-GB"
+                                                  WatermarkText="Enter patient name..." Height="27" Margin="0,0,0,10" LostFocus="PatientName_LostFocus" />
+                        <CheckBox x:Name="PatientGender" Content="Tick if MALE (most review patients are female)" />
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel x:Name="StackPanel"/>
+            </StackPanel>
+        </ScrollViewer>
+        <Menu x:Name="menu" Height="23" VerticalAlignment="Top">
+            <MenuItem x:Name="LoadProformaItem" Header="Load Proforma" Click="LoadProformaItem_Click" />
+            <MenuItem x:Name="ExportToClipboardItem" Header="Export to clipboard" Click="ExportToClipboardItem_Click" />
+            <MenuItem x:Name="LoadExpansionsFile" Header="Load custom expansions file..." Click="LoadExpansionsFile_OnClick" />
+            <MenuItem x:Name="ShowExpansionsHelper" Header="Show expansions helper" Click="ShowExpansionsHelper_OnClick" />
+        </Menu>
+    </Grid>
+</Window>
